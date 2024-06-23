@@ -46,5 +46,6 @@ public class Application {
 			log.info("User 1: {}", userHttpClient.findById(1));
 		};
 	}
+	// test git branch and merge
 
 }
