@@ -1,0 +1,31 @@
+GET http://localhost:8080/api/runs
+###
+GET http://localhost:8080/api/runs/1
+###
+GET http://localhost:8080/api/runs/location/INDOOR
+###
+POST http://localhost:8080/api/runs
+Content-Type: application/json
+
+{
+  "id": 11,
+  "title": "Afternoon Run",
+  "startedOn": "2023-12-01T15:00:00",
+  "completedOn": "2023-12-01T16:00:00",
+  "miles": 5,
+  "location": "OUTDOOR"
+}
+###
+PUT http://localhost:8080/api/runs/3
+Content-Type: application/json
+
+{
+  "id": 3,
+  "title": "Updated Morning Run",
+  "startedOn": "2023-12-01T06:00:00",
+  "completedOn": "2023-12-01T07:00:00",
+  "miles": 5,
+  "location": "OUTDOOR"
+}
+###
+DELETE http://localhost:8080/api/runs/11
